@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="style8.css">
+</head>
+<body>
+<h1>HTML Form</h1>
+<form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <label>Gender:</label>
+    <div class="radio-group">
+        <label><input type="radio" name="gender" value="male" required> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+        <label><input type="radio" name="gender" value="other"> Other</label>
+    </div>
+    <label for="country">Country:</label>
+    <select id="country" name="country" required>
+        <option value="">Select your country</option>
+        <option value="India">India</option>
+        <option value="USA">USA</option>
+        <option value="Canada">Canada</option>
+        <option value="UK">UK</option>
+        <option value="Australia">Australia</option>
+    </select>
+    <input type="submit" class="submit-button" value="Submit"></button>
+</form>
+</body>
+</html>
