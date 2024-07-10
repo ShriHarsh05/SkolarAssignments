@@ -1,0 +1,25 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.para
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 1.6;
+    text-transform: lowercase;
+}
+.para::first-line
+{
+    text-transform: capitalize;
+}
+.heading 
+{
+    font-weight: 900;
+}

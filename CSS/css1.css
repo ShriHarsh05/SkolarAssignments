@@ -1,0 +1,44 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+/*Element Selector*/
+p
+{
+    color: blue;
+}
+p::first-line
+{
+    font-weight: bold;
+}
+/*Class Selector*/
+.text
+{
+    font-size: 18px;
+    line-height: 1.6;
+}
+/*Id Selector*/
+#main-heading
+{
+    text-align: center;
+    color: green;
+}
+a
+{
+    text-decoration: none;
+    background-color: aqua;
+    color: black;
+    
+}
+a:hover
+{
+    color: red;
+    background-color: black;
+}
+.box
+{
+    border: 2px solid red;
+    padding: 10px;
+    text-align: center;
+}
