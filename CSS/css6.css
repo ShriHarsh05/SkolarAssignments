@@ -1,0 +1,32 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    transition: 0.8s;
+}
+.container
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    background-color: rgb(0, 177, 177);
+}
+.item
+{
+    background-color: aqua;
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid black;
+    flex: 1;
+}
+.item:hover
+{
+    font-size: 30px;
+    background-color: blue;
+    text-transform: uppercase;
+}
+.item:nth-child(2)
+{
+    order: 1;
+}
