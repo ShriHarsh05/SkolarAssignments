@@ -1,0 +1,114 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+.fade
+{
+  animation: fade 3s infinite alternate;
+}
+@keyframes slide
+{
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100px);
+  }
+}
+.slide
+{
+  animation: slide 2s infinite alternate;
+}
+@keyframes spin
+{
+  from
+  {
+    transform: rotate(0deg);
+  }
+  to
+  {
+    transform: rotate(360deg);
+  }
+}
+.spin
+{
+  animation: spin 4s linear infinite;
+}
+@keyframes combined
+{
+  0%
+  {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+  50%
+  {
+    transform: translateX(50px) rotate(180deg);
+    opacity: 0.5;
+  }
+  100%
+  {
+    transform: translateX(0) rotate(360deg);
+    opacity: 1;
+  }
+}
+.combined
+{
+  animation: combined 5s ease-in-out infinite;
+}
