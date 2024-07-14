@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0f0f0;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  .btn {
+    position: relative;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn:active {
+    background-color: #003d7a;
+  }
+  .list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .list li {
+    margin: 10px;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .list li:hover {
+    transform: scale(1.1);
+  }
+  .box {
+    width: 200px;
+    height: 100px;
+    background-color: #ffc107;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .box::before {
+    content: 'Click';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+  }
+  
+  .box:hover::before {
+    content: 'Clicked!';
+    color: #28a745;
+  }
