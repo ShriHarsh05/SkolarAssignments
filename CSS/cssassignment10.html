@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Images</title>
+  <link rel="stylesheet" href="css10.css">
+</head>
+<body>
+  <header>Responsive Images</header>
+  <main>
+    <img src="https://cdn.pixabay.com/photo/2015/09/16/08/55/online-942406_960_720.jpg"
+     srcset="https://cdn.pixabay.com/photo/2015/09/16/08/55/online-942406_500.jpg 500w,
+             https://cdn.pixabay.com/photo/2015/09/16/08/55/online-942406_1000.jpg 1000w,
+             https://cdn.pixabay.com/photo/2015/09/16/08/55/online-942406_2000.jpg 2000w"
+     sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+     alt="A beautiful landscape">
+  </main>
+</body>
+</html>
